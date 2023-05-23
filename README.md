@@ -1,70 +1,9 @@
-# Getting Started with Create React App
+# Ikiru-People-customer-portal 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2023-05-24 at 05-04-41 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/251cfd0e-2d29-4112-bbc4-4fb381333ad7)
+![Screenshot 2023-05-24 at 05-04-58 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/49852d2b-6b36-48c9-9a5d-32e5d9338248)
+![Screenshot 2023-05-24 at 05-05-09 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/0e1cb61b-7531-4756-868b-fb5ae7c94d49)
+![Screenshot 2023-05-24 at 05-05-22 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/e3431dd5-e95a-4a82-82b9-6faecfe891cd)
+![Screenshot 2023-05-24 at 05-05-33 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/5179a432-0d30-4f1b-afae-fe4ce6ed1c2d)
+![Screenshot 2023-05-24 at 05-05-40 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/2129ac83-0e55-4d33-a0cb-36aac4362ae0)
+![Screenshot 2023-05-24 at 05-05-48 React App](https://github.com/zeon-X/Ikiru-People-customer-portal/assets/73699852/e70ba1ff-c2b3-4901-8901-47d5c34bf4ed)
