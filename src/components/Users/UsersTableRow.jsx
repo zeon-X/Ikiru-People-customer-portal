@@ -5,13 +5,14 @@ const UsersTableRow = ({ x }) => {
     <tr>
       <td className="text-gray-600 font-semibold ">
         <div className="flex justify-start items-center gap-2">
-          <img
-            height={40}
-            width={40}
-            className="rounded-full"
-            src={x?.img === "" ? "" : x?.img}
-            alt="img"
-          />
+          <div className="rounded-full bg-warning w-[40px] h-[40px] flex justify-center items-center">
+            <img
+              height={20}
+              width={20}
+              src={x?.img === "" ? "" : x?.img}
+              alt="img"
+            />
+          </div>
           <div>
             <p className="text-lg">{x?.name}</p>
             <p>{x?.email}</p>

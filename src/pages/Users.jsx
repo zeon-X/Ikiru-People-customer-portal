@@ -3,25 +3,28 @@ import UsersTableRow from "../components/Users/UsersTableRow";
 import AdditionalContactsRow from "../components/Users/AdditionalContactsRow";
 import CreateNewContact from "../components/Users/CreateNewContact";
 import InvitationSuccessModal from "../components/Users/InvitationSuccessModal";
+
+import imgicon from "../assets/Users/person.svg";
+
 const userInfo = [
   {
     name: "chriscaw",
     email: "example566@gmail.com",
-    img: "",
+    img: imgicon,
     access: ["Admin", "Biling", "Support(User Only)", "Suppoert(User Only)"],
     id: 1,
   },
   {
     name: "Joe Charlie",
     email: "example566@gmail.com",
-    img: "",
+    img: imgicon,
     access: ["Biling", "Support(User Only)", "Suppoert(User Only)"],
     id: 2,
   },
   {
     name: "Joe Charlie",
     email: "example566@gmail.com",
-    img: "",
+    img: imgicon,
     access: ["Biling", "Support(User Only)", "Suppoert(User Only)"],
     id: 3,
   },
@@ -56,7 +59,7 @@ const Users = () => {
           </div>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px]">
+        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>
@@ -81,7 +84,7 @@ const Users = () => {
           </p>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px]">
+        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>
@@ -103,3 +106,7 @@ const Users = () => {
 };
 
 export default Users;
+
+// Developed By
+// Md.Shefat Zeon
+// 2023-05-23

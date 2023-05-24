@@ -5,17 +5,17 @@ import Header from "../shared/Header";
 const Drawer = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="relative">
       <Header></Header>
-      <div className="drawer drawer-mobile mt-[-82px] pt-[82px] max-w-full mx-auto">
-        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer drawer-mobile  max-w-full mx-auto">
+        <input id="drawer-toggle" type="checkbox" className="drawer-toggle" />
 
-        <div className="drawer-content w-full bg-base-200 ">
+        <div className="drawer-content w-full bg-base-200 pt-[82px]">
           <Outlet />
         </div>
-        <div className="drawer-side ">
-          <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-[250px]  ">
+        <div className="drawer-side  ">
+          <label htmlFor="drawer-toggle" className="drawer-overlay"></label>
+          <ul className="menu p-4 w-[250px]  bg-white pt-[112px]">
             {/* <!-- Sidebar content here --> */}
             <li>
               <NavLink to="" className="flex justify-start items-center gap-4">

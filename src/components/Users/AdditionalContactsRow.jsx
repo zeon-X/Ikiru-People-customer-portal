@@ -20,13 +20,15 @@ const AdditionalContactsRow = ({ x }) => {
           })}
         </div>
       </td>
-      <td className="flex justify-end gap-2">
-        <button className="border border-[#fc4616] bg-[#fff5f2] text-[#fc4616] px-[10px] py-[4px] rounded-[4px]">
-          Cancle Invite
-        </button>
-        <button className="border px-[10px] py-[4px] rounded-[4px]">
-          Manage User
-        </button>
+      <td>
+        <div className="flex justify-end gap-2">
+          <button className="border border-[#fc4616] bg-[#fff5f2] text-[#fc4616] px-[10px] py-[4px] rounded-[4px]">
+            Cancle Invite
+          </button>
+          <button className="border px-[10px] py-[4px] rounded-[4px]">
+            Manage User
+          </button>
+        </div>
       </td>
     </tr>
   );

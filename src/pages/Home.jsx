@@ -4,27 +4,37 @@ import RecentCasesTableRow from "../components/Home/RecentCasesTableRow";
 import WebminarTableRow from "../components/Home/WebminarTableRow";
 import RequestTraining from "../components/Home/RequestTraining";
 
+import icon1 from "../assets/Home/create_new_folder.svg";
+import icon2 from "../assets/Home/model_training.svg";
+import icon3 from "../assets/Home/support_agent.svg";
+import icon4 from "../assets/Home/query_builder.svg";
+
+import fill_icon1 from "../assets/Home/create_new_folder_fill.svg";
+import fill_icon2 from "../assets/Home/people_alt_fill.svg";
+import fill_icon3 from "../assets/Home/model_training_fill.svg";
+import fill_icon4 from "../assets/Home/link_fill.svg";
+
 const HomePortalInfo = [
   {
-    icon: "",
+    icon: icon1,
     title: "Create Support Case",
     subtitle: "Register new case",
     nav: "",
   },
   {
-    icon: "",
+    icon: icon2,
     title: "Request Training",
     subtitle: "Register new Training",
     nav: "",
   },
   {
-    icon: "",
+    icon: icon3,
     title: "Contact Client Success",
     subtitle: "It allows to schedule meeting",
     nav: "",
   },
   {
-    icon: "",
+    icon: icon4,
     title: "Finance Query",
     subtitle: "Ask Question",
     nav: "",
@@ -93,80 +103,112 @@ const Home = () => {
           Welcome to the Ikiru People customer portal
         </p>
 
-        <div className="mb-12 grid grid-cols-4 justify-start items-start">
+        <div className="mb-12 grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 justify-between items-start gap-5">
           {HomePortalInfo.map((x) => {
             return <HomePortals props={x} />;
           })}
         </div>
 
-        <div className="grid grid-cols-2 gap-x-[24px] gap-y-[32px] justify-start items-start">
-          <div className="w-[550px] p-4 bg-white rounded-xl shadow">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-x-[24px] gap-y-[32px] justify-start items-start">
+          <div className="w-abc p-4 bg-white rounded-xl shadow">
             <TableHeader
-              icon=""
+              icon={fill_icon1}
               title="Recent Cases"
               btnName="View all cases"
               btnFunc=""
             />
-
-            <table className="table table-compact  w-full mt-[26px]">
-              <tbody>
-                <tr>
-                  <td className="text-sm text-gray-500">CASE NAME</td>
-                  <td className="text-sm text-gray-500">STATUS</td>
-                  <td className="text-sm text-gray-500">PRIORITY</td>
-                </tr>
-                <tr></tr>
-              </tbody>
-              {dataSampleCaseAndWebMinar.map((x) => {
-                return <RecentCasesTableRow x={x} />;
-              })}
-            </table>
+            <div className="overflow-x-auto">
+              <table className="table table-compact  w-full mt-[26px]">
+                <tbody>
+                  <tr>
+                    <td className="text-sm text-gray-500">CASE NAME</td>
+                    <td className="text-sm text-gray-500">STATUS</td>
+                    <td className="text-sm text-gray-500">PRIORITY</td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+                {dataSampleCaseAndWebMinar.map((x) => {
+                  return <RecentCasesTableRow x={x} />;
+                })}
+              </table>
+            </div>
           </div>
-          <div className="w-[550px] p-4 bg-white rounded-xl shadow">
+          <div className="w-abc p-4 bg-white rounded-xl shadow">
             <TableHeader
-              icon=""
+              icon={fill_icon2}
               title="Webinars"
               btnName="View all"
               btnFunc=""
             />
-
-            <table className="table table-compact  w-full mt-[26px]">
-              <tbody>
-                <tr>
-                  <td className="text-sm text-gray-500">NAME</td>
-                  <td className="text-sm text-gray-500">DATE</td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-              </tbody>
-              {dataSampleCaseAndWebMinar.map((x) => {
-                return <WebminarTableRow x={x} />;
-              })}
-            </table>
+            <div className="overflow-x-auto">
+              <table className="table table-compact  w-full mt-[26px]">
+                <tbody>
+                  <tr>
+                    <td className="text-sm text-gray-500">NAME</td>
+                    <td className="text-sm text-gray-500">DATE</td>
+                    <td></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+                {dataSampleCaseAndWebMinar.map((x) => {
+                  return <WebminarTableRow x={x} />;
+                })}
+              </table>
+            </div>
           </div>
-          <div className="w-[550px] p-4 bg-white rounded-xl shadow">
+          <div className="w-abc p-4 bg-white rounded-xl shadow ">
             <TableHeader
-              icon=""
+              icon={fill_icon3}
               title="Requested Training"
               btnName="View all"
               btnFunc=""
             />
 
-            <table className="table table-compact  w-full mt-[26px]">
-              <tbody>
-                <tr>
-                  <td className="text-sm text-gray-500">
-                    PURPOSE & REQUEST TIME
-                  </td>
-                  <td className="text-sm text-gray-500">Date & Time</td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-              </tbody>
-              {dataSampleReqTraining.map((x) => {
-                return <RequestTraining x={x} />;
-              })}
-            </table>
+            <div className="overflow-x-auto">
+              <table className="table table-compact  w-full mt-[26px] ">
+                <tbody>
+                  <tr>
+                    <td className="text-sm text-gray-500">
+                      PURPOSE & REQUEST TIME
+                    </td>
+                    <td className="text-sm text-gray-500">Date & Time</td>
+                    <td></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+                {dataSampleReqTraining.map((x) => {
+                  return <RequestTraining x={x} />;
+                })}
+              </table>
+            </div>
+          </div>
+
+          <div className="w-abc p-4 bg-white rounded-xl shadow">
+            <TableHeader
+              icon={fill_icon4}
+              title="Useful links"
+              btnName="View all"
+              btnFunc=""
+            />
+            <div className="overflow-x-auto">
+              <table className="table table-compact  w-full mt-[26px] ">
+                <tbody>
+                  <tr>
+                    <td className="text-sm text-gray-500">List</td>
+
+                    <td></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+                {dataSampleCaseAndWebMinar.map((x) => {
+                  return (
+                    <tr>
+                      <td>{x?.name}</td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -175,3 +217,7 @@ const Home = () => {
 };
 
 export default Home;
+
+// Developed By
+// Md.Shefat Zeon
+// 2023-05-23

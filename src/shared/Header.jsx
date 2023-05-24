@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="relative top-0 shadow header_basic">
+    <div className="absolute top-0 shadow w-full bg-white header_basic">
       <div className="max-w-full mx-auto flex justify-between p-4 ">
         <div className="flex justify-center items-center gap-2">
           <label
-            htmlFor="my-drawer-2"
+            htmlFor="drawer-toggle"
             className="btn btn-primary drawer-button lg:hidden"
           >
             <svg
