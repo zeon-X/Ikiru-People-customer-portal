@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import RequireAdmin from "./auth/RequireAdmin";
@@ -13,6 +13,11 @@ import ManageProfile from "./pages/ManageProfile";
 import MyProfile from "./pages/MyProfile";
 import SelectAccount from "./pages/SelectAccount";
 import Users from "./pages/Users";
+import Billing from "./pages/Billing";
+import SupportDashboard from "./pages/SupportDashboard";
+import Cases from "./pages/Cases";
+import CreateCases from "./pages/CreateCases";
+import Databases from "./pages/Databases";
 
 function App() {
   return (
@@ -31,7 +36,7 @@ function App() {
                 <Home />
               </RequireAuth>
             }
-          ></Route>
+          />
           <Route
             path="home"
             element={
@@ -39,40 +44,31 @@ function App() {
                 <Home />
               </RequireAuth>
             }
-          ></Route>
+          />
+          <Route
+            path="billing"
+            element={
+              <RequireAuth>
+                <Billing />
+              </RequireAuth>
+            }
+          />
 
           <Route
-            path="about"
+            path="support"
             element={
               <RequireAuth>
-                <About />
+                <>
+                  <Outlet />
+                </>
               </RequireAuth>
             }
-          ></Route>
-          <Route
-            path="privacy-policy"
-            element={
-              <RequireAuth>
-                <PrivacyPolicy />
-              </RequireAuth>
-            }
-          ></Route>
-          <Route
-            path="manage-profile"
-            element={
-              <RequireAuth>
-                <ManageProfile />
-              </RequireAuth>
-            }
-          ></Route>
-          <Route
-            path="my-profile"
-            element={
-              <RequireAuth>
-                <MyProfile />
-              </RequireAuth>
-            }
-          ></Route>
+          >
+            <Route path="dashboard" element={<SupportDashboard />} />
+            <Route path="cases" element={<Cases />} />
+            <Route path="create-cases" element={<CreateCases />} />
+            <Route path="databases" element={<Databases />} />
+          </Route>
 
           <Route
             path="select-account"
@@ -81,7 +77,7 @@ function App() {
                 <SelectAccount />
               </RequireAuth>
             }
-          ></Route>
+          />
           <Route
             path="users"
             element={
@@ -89,7 +85,40 @@ function App() {
                 <Users />
               </RequireAuth>
             }
-          ></Route>
+          />
+
+          <Route
+            path="about"
+            element={
+              <RequireAuth>
+                <About />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="privacy-policy"
+            element={
+              <RequireAuth>
+                <PrivacyPolicy />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="manage-profile"
+            element={
+              <RequireAuth>
+                <ManageProfile />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="my-profile"
+            element={
+              <RequireAuth>
+                <MyProfile />
+              </RequireAuth>
+            }
+          />
         </Route>
       </Routes>
     </div>

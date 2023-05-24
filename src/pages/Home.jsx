@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HomePortals from "../components/Home/HomePortals";
 import RecentCasesTableRow from "../components/Home/RecentCasesTableRow";
 import WebminarTableRow from "../components/Home/WebminarTableRow";
@@ -14,30 +14,38 @@ import fill_icon2 from "../assets/Home/people_alt_fill.svg";
 import fill_icon3 from "../assets/Home/model_training_fill.svg";
 import fill_icon4 from "../assets/Home/link_fill.svg";
 
+import RequestTrainingModal from "../components/Home/RequestTrainingModal";
+import RequestReceivedSuccessModal from "../components/Home/RequestReceivedSuccessModal";
+import UseFullLinksModal from "../components/Home/UseFullLinksModal";
+
 const HomePortalInfo = [
   {
     icon: icon1,
     title: "Create Support Case",
     subtitle: "Register new case",
     nav: "",
+    id: "",
   },
   {
     icon: icon2,
     title: "Request Training",
     subtitle: "Register new Training",
     nav: "",
+    id: "reqTrainingModal",
   },
   {
     icon: icon3,
     title: "Contact Client Success",
     subtitle: "It allows to schedule meeting",
     nav: "",
+    id: "",
   },
   {
     icon: icon4,
     title: "Finance Query",
     subtitle: "Ask Question",
     nav: "",
+    id: "",
   },
 ];
 
@@ -47,24 +55,28 @@ const dataSampleCaseAndWebMinar = [
     status: "Active",
     priority: 3,
     date: "2020-08-08",
+    link: "https:zoom.us/55686fdffvjcjk",
   },
   {
     name: "How to Save Money on Baby Essentials",
     status: "Active",
     priority: 3,
     date: "2020-08-08",
+    link: "https:zoom.us/55686fdffvjcjk",
   },
   {
     name: "Back to School at Home – Tips for Parents",
     status: "Active",
     priority: 1,
     date: "2020-08-08",
+    link: "https:zoom.us/55686fdffvjcjk",
   },
   {
     name: "Kids Fall Fashion Tips with Wendy Lam",
     status: "Resolved",
     priority: null,
     date: "2020-08-08",
+    link: "https:zoom.us/55686fdffvjcjk",
   },
 ];
 
@@ -96,8 +108,21 @@ const TableHeader = ({ icon, title, btnName, btnFunc }) => {
 };
 
 const Home = () => {
+  const [usefullLinksDetails, setUsefullLinksDetails] = useState({});
   return (
     <div className="p-[32px] ">
+      {/* MODALS */}
+      <input type="checkbox" id="reqTrainingModal" className="modal-toggle" />
+      <RequestTrainingModal />
+
+      {/* TEST LABLES */}
+
+      <input type="checkbox" id="reqRecSuccess" className="modal-toggle" />
+      <RequestReceivedSuccessModal />
+
+      <input type="checkbox" id="linksDetails" className="modal-toggle" />
+      <UseFullLinksModal props={usefullLinksDetails} />
+
       <div>
         <p className="font-bold text-2xl mb-12">
           Welcome to the Ikiru People customer portal
@@ -203,7 +228,17 @@ const Home = () => {
                 {dataSampleCaseAndWebMinar.map((x) => {
                   return (
                     <tr>
-                      <td>{x?.name}</td>
+                      <td>
+                        <label
+                          onClick={() => {
+                            setUsefullLinksDetails(x);
+                          }}
+                          htmlFor="linksDetails"
+                          className="cursor-pointer"
+                        >
+                          {x?.name}
+                        </label>
+                      </td>
                     </tr>
                   );
                 })}

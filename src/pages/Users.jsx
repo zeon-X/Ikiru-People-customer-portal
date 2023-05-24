@@ -1,7 +1,7 @@
 import React from "react";
 import UsersTableRow from "../components/Users/UsersTableRow";
 import AdditionalContactsRow from "../components/Users/AdditionalContactsRow";
-import CreateNewContact from "../components/Users/CreateNewContact";
+import CreateNewContactModal from "../components/Users/CreateNewContactModal";
 import InvitationSuccessModal from "../components/Users/InvitationSuccessModal";
 
 import imgicon from "../assets/Users/person.svg";
@@ -35,7 +35,7 @@ const Users = () => {
     <div className="p-[32px] ">
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="AddNewContactModal" className="modal-toggle" />
-      <CreateNewContact />
+      <CreateNewContactModal />
 
       {/* Put this part before </body> tag */}
       <input
