@@ -36,7 +36,7 @@ const CreateNewContactModal = () => {
                 className="input input-bordered w-full max-w-sm rounded"
               />
               <label className="label">
-                <span className="label-text-alt text-gray-400"></span>
+                <span className="label-text-alt text-info"></span>
               </label>
             </div>
             <div className="form-control w-full max-w-sm">
@@ -49,12 +49,12 @@ const CreateNewContactModal = () => {
                 className="input input-bordered w-full max-w-sm rounded"
               />
               <label className="label">
-                <span className="label-text-alt text-gray-400"></span>
+                <span className="label-text-alt text-info"></span>
               </label>
             </div>
 
             <div className="mt-10">
-              <p className=" text-gray-400 mb-2"> Give access to the person</p>
+              <p className=" text-info mb-2"> Give access to the person</p>
 
               <label className="label cursor-pointer justify-start gap-3 mb-1">
                 <input
@@ -62,7 +62,7 @@ const CreateNewContactModal = () => {
                   name=""
                   className="checkbox checkbox-sm rounded"
                 />
-                <span className="text-gray-400 text-sm">Admin</span>
+                <span className="text-info text-sm">Admin</span>
               </label>
 
               <label className="label cursor-pointer justify-start gap-3 mb-1">
@@ -71,7 +71,7 @@ const CreateNewContactModal = () => {
                   name=""
                   className="checkbox checkbox-sm rounded"
                 />
-                <span className="text-gray-400 text-sm">Billing</span>
+                <span className="text-info text-sm">Billing</span>
               </label>
               <label className="label cursor-pointer justify-start gap-3 mb-1">
                 <input
@@ -79,9 +79,7 @@ const CreateNewContactModal = () => {
                   name=""
                   className="checkbox checkbox-sm rounded"
                 />
-                <span className="text-gray-400 text-sm">
-                  Support (User only)
-                </span>
+                <span className="text-info text-sm">Support (User only)</span>
               </label>
               <label className="label cursor-pointer justify-start gap-3 mb-1">
                 <input
@@ -89,7 +87,7 @@ const CreateNewContactModal = () => {
                   name=""
                   className="checkbox checkbox-sm rounded"
                 />
-                <span className="text-gray-400 text-sm">User</span>
+                <span className="text-info text-sm">User</span>
               </label>
             </div>
 

@@ -13,8 +13,8 @@ const HomePortals = ({ props }) => {
           <img width={24} height={24} src={props?.icon} alt="icon" />
         </div>
 
-        <p className="mt-4 font-bold">{props?.title}</p>
-        <p className="text-sm">{props?.subtitle}</p>
+        <p className="mt-4 font-bold text-[16px]">{props?.title}</p>
+        <p className="text-[12px] text-info">{props?.subtitle}</p>
       </div>
     </label>
   );

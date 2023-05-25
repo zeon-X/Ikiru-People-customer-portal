@@ -3,18 +3,18 @@ import React from "react";
 const RequestedAccountTableRow = ({ x }) => {
   return (
     <tr>
-      <td className="text-gray-600 font-semibold ">{x?.referance}</td>
+      <td className="text-info text-[16px] font-medium ">{x?.referance}</td>
       <td className="text-center">
         {x?.status?.toLowerCase() == "requested" ? (
-          <p className="bg-[#fff6ed] text-[#ffa043] font-bold rounded-full px-2 py-1.5 w-20 text-xs ">
+          <p className="bg-[#fff6ed] text-[14px] text-[#ffa043] font-medium rounded-full px-2 py-1.5 w-24  ">
             {x?.status}
           </p>
         ) : x?.status?.toLowerCase() == "rejected" ? (
-          <p className="bg-[#ffebe6] text-[red] font-bold rounded-full px-2 py-1.5 w-20 text-xs ">
+          <p className="bg-[#ffebe6] text-[14px] text-[red] font-medium rounded-full px-2 py-1.5 w-24  ">
             {x?.status}
           </p>
         ) : (
-          <p className="bg-[#0669fc] text-[white] font-bold rounded-full px-2 py-1.5 w-20 text-xs ">
+          <p className="bg-[#0669fc] text-[14px] text-[white] font-medium rounded-full px-2 py-1.5 w-24  ">
             {x?.status}
           </p>
         )}

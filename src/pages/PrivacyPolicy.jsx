@@ -6,90 +6,105 @@ const PrivacyPolicy = () => {
       <div className="flex min-h-full h-full relative">
         <div className="h-full sticky top-0">
           <div className="lg:min-w-[314px] sm:min-w-[150px] border lg:p-[32px] sm:p-6 h-full bg-white flex flex-col overflow-y-auto ">
-            <p className="font-bold text-2xl ">Privacy Policy</p>
+            <p className="font-bold text-[24px] ">Privacy Policy</p>
 
-            <a href="/privacy-policy#" className="font-semibold mt-10">
+            <a
+              href="/privacy-policy#"
+              className="font-semibold text-[14px]  mt-10"
+            >
               Getting Started
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Overview
             </a>
 
-            <a href="/privacy-policy#" className="font-semibold mt-10">
+            <a
+              href="/privacy-policy#"
+              className="font-semibold text-[14px]  mt-10"
+            >
               Privacy
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Substance Privacy Policy
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Privacy FAQ
             </a>
 
-            <a href="/privacy-policy#" className="font-semibold mt-10">
+            <a
+              href="/privacy-policy#"
+              className="font-semibold text-[14px]  mt-10"
+            >
               Data Requests
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Data Request Overview
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Data Request Policy
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Transparency Report
             </a>
 
-            <a href="/privacy-policy#" className="font-semibold mt-10">
+            <a
+              href="/privacy-policy#"
+              className="font-semibold text-[14px]  mt-10"
+            >
               Compliance
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Cookie Policy
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Substance’s GDPR Commitment
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               California Consumer Privacy Act (CCPA) FAQ
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               FERPA Compliance
             </a>
 
-            <a href="/privacy-policy#" className="font-semibold mt-10">
+            <a
+              href="/privacy-policy#"
+              className="font-semibold text-[14px]  mt-10"
+            >
               Security
             </a>
             <a
               href="/privacy-policy#"
-              className="text-gray-400 font-semibold mt-3"
+              className="text-info font-semibold text-[14px]  mt-3"
             >
               Overview
             </a>
@@ -98,11 +113,11 @@ const PrivacyPolicy = () => {
 
         <div className="lg:p-20 sm:p-4 lg:w-[876px] sm:w-auto">
           <div className="">
-            <p className="font-semibold text-xl mb-8">
+            <p className="font-semibold text-[18px]  text-xl mb-8">
               Effective: October 5, 2020
             </p>
 
-            <p>
+            <p className="text-[16]">
               This Privacy Policy describes how Substance collects, uses and
               discloses information, and what choices you have with respect to
               the information. <br /> <br />
@@ -111,41 +126,63 @@ const PrivacyPolicy = () => {
               explained in more detail in the “Identifying the Data Controller
               and Processor” section below.
             </p>
-            <p className="font-semibold text-3xl mb-8 mt-12">
+            <p className="font-semibold text-[28px]  text-3xl mb-8 mt-12">
               Table of Contents:
             </p>
 
-            <div className="text-purple-600 font-semibold flex flex-col">
-              <a href="/privacy-policy#">
+            <div className="text-purple-600 font-semibold text-[14px]  flex flex-col">
+              <a href="/privacy-policy#" className="text-[16px]">
                 • Applicability of this Privacy Policy{" "}
               </a>
-              <a href="/privacy-policy#">
+              <a href="/privacy-policy#" className="text-[16px]">
                 • Information We Collect and Receive
               </a>
-              <a href="/privacy-policy#">• How We Use Information</a>
-              <a href="/privacy-policy#">• Data Retention</a>
-              <a href="/privacy-policy#">
+              <a href="/privacy-policy#" className="text-[16px]">
+                • How We Use Information
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Data Retention
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
                 • How We Share and Disclose Information
               </a>
-              <a href="/privacy-policy#">• Security</a>
-              <a href="/privacy-policy#">• Age Limitations</a>
-              <a href="/privacy-policy#">• Changes to this Privacy Policy</a>
-              <a href="/privacy-policy#">• International Data Transfers</a>
-              <a href="/privacy-policy#">• Data Protection Officer </a>
-              <a href="/privacy-policy#">
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Security
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Age Limitations
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Changes to this Privacy Policy
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • International Data Transfers
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Data Protection Officer{" "}
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
                 • Identifying the Data Controller and Processor
               </a>
-              <a href="/privacy-policy#">• Your Rights</a>
-              <a href="/privacy-policy#">• California Privacy Rights</a>
-              <a href="/privacy-policy#">• Data Protection Authority </a>
-              <a href="/privacy-policy#">• Contacting Slack</a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Your Rights
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • California Privacy Rights
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Data Protection Authority{" "}
+              </a>
+              <a href="/privacy-policy#" className="text-[16px]">
+                • Contacting Slack
+              </a>
             </div>
 
-            <p className="font-semibold text-3xl mb-8 mt-12">
+            <p className="font-semibold text-[28px]  text-3xl mb-8 mt-12">
               Applicability Of This Privacy Policy
             </p>
 
-            <p>
+            <p className="text-[16]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

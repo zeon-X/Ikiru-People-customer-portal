@@ -100,9 +100,9 @@ const TableHeader = ({ icon, title, btnName, btnFunc }) => {
     <div className="flex justify-between items-center">
       <div className="flex justify-center items-center gap-2">
         <img width={20} height={20} src={icon} alt="icon" />
-        <p className="font-bold">{title}</p>
+        <p className="font-bold text-[16px] text-Manrope">{title}</p>
       </div>
-      <button className="text-primary text-sm">{btnName}</button>
+      <button className="text-primary text-[13px]">{btnName}</button>
     </div>
   );
 };
@@ -124,7 +124,7 @@ const Home = () => {
       <UseFullLinksModal props={usefullLinksDetails} />
 
       <div>
-        <p className="font-bold text-2xl mb-12">
+        <p className="font-bold text-[24px] mb-12">
           Welcome to the Ikiru People customer portal
         </p>
 
@@ -135,7 +135,7 @@ const Home = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-x-[24px] gap-y-[32px] justify-start items-start">
-          <div className="w-abc p-4 bg-white rounded-xl shadow">
+          <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
               icon={fill_icon1}
               title="Recent Cases"
@@ -146,19 +146,27 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px]">
                 <tbody>
                   <tr>
-                    <td className="text-sm text-gray-500">CASE NAME</td>
-                    <td className="text-sm text-gray-500">STATUS</td>
-                    <td className="text-sm text-gray-500">PRIORITY</td>
+                    <td className="text-[12px] text-info font-Manrope">
+                      CASE NAME
+                    </td>
+                    <td className="text-[12px] text-info font-Manrope">
+                      STATUS
+                    </td>
+                    <td className="text-[12px] text-info font-Manrope">
+                      PRIORITY
+                    </td>
                   </tr>
                   <tr></tr>
                 </tbody>
+                <div className="mb-2" />
+
                 {dataSampleCaseAndWebMinar.map((x) => {
                   return <RecentCasesTableRow x={x} />;
                 })}
               </table>
             </div>
           </div>
-          <div className="w-abc p-4 bg-white rounded-xl shadow">
+          <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
               icon={fill_icon2}
               title="Webinars"
@@ -169,19 +177,20 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px]">
                 <tbody>
                   <tr>
-                    <td className="text-sm text-gray-500">NAME</td>
-                    <td className="text-sm text-gray-500">DATE</td>
+                    <td className="text-[12px] text-info font-Manrope">NAME</td>
+                    <td className="text-[12px] text-info font-Manrope">DATE</td>
                     <td></td>
                   </tr>
-                  <tr></tr>
+                  <tr className="p-4"></tr>
                 </tbody>
+                <div className="mb-2" />
                 {dataSampleCaseAndWebMinar.map((x) => {
                   return <WebminarTableRow x={x} />;
                 })}
               </table>
             </div>
           </div>
-          <div className="w-abc p-4 bg-white rounded-xl shadow ">
+          <div className="w-abc p-8 bg-white rounded-xl shadow ">
             <TableHeader
               icon={fill_icon3}
               title="Requested Training"
@@ -193,14 +202,17 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px] ">
                 <tbody>
                   <tr>
-                    <td className="text-sm text-gray-500">
+                    <td className="text-[12px] text-info font-Manrope">
                       PURPOSE & REQUEST TIME
                     </td>
-                    <td className="text-sm text-gray-500">Date & Time</td>
+                    <td className="text-[12px] text-info font-Manrope">
+                      Date & Time
+                    </td>
                     <td></td>
                   </tr>
                   <tr></tr>
                 </tbody>
+                <div className="mb-2" />
                 {dataSampleReqTraining.map((x) => {
                   return <RequestTraining x={x} />;
                 })}
@@ -208,7 +220,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-abc p-4 bg-white rounded-xl shadow">
+          <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
               icon={fill_icon4}
               title="Useful links"
@@ -219,12 +231,13 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px] ">
                 <tbody>
                   <tr>
-                    <td className="text-sm text-gray-500">List</td>
+                    <td className="text-[12px] text-info font-Manrope">List</td>
 
                     <td></td>
                   </tr>
                   <tr></tr>
                 </tbody>
+                <div className="mb-2" />
                 {dataSampleCaseAndWebMinar.map((x) => {
                   return (
                     <tr>
@@ -234,7 +247,7 @@ const Home = () => {
                             setUsefullLinksDetails(x);
                           }}
                           htmlFor="linksDetails"
-                          className="cursor-pointer"
+                          className="cursor-pointer text-[14px]"
                         >
                           {x?.name}
                         </label>

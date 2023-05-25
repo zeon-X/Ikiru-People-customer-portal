@@ -22,13 +22,13 @@ const UseFullLinksModal = ({ props }) => {
         </div>
         {/* REST */}
         <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-400">Title</p>
+          <p className="uppercase text-sm font-semibold text-info">Title</p>
           <p className="font-semibold mb-5">{props?.name}</p>
 
-          <p className="uppercase text-sm font-semibold text-gray-400">Date</p>
+          <p className="uppercase text-sm font-semibold text-info">Date</p>
           <p className="font-semibold mb-5">{props?.date}</p>
 
-          <p className="uppercase text-sm font-semibold text-gray-400">Link</p>
+          <p className="uppercase text-sm font-semibold text-info">Link</p>
           <div className="mb-5 flex justify-between items-center">
             <p className="font-semibold ">{props?.link}</p>
           </div>

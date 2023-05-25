@@ -47,13 +47,16 @@ const Users = () => {
 
       <div>
         <div className="mb-6 flex justify-between items-start">
-          <p className="font-bold text-2xl ">Users</p>
+          <p className="font-bold text-[24px] ">Users</p>
 
           <div className="">
             <label htmlFor="invitationSuccessModal" className="btn mx-2">
               Invitation Success Modal
             </label>
-            <label htmlFor="AddNewContactModal" className="btn btn-primary">
+            <label
+              htmlFor="AddNewContactModal"
+              className="btn btn-primary text-[14px] normal-case"
+            >
               Add New User
             </label>
           </div>
@@ -63,11 +66,13 @@ const Users = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-xs font-semibold text-gray-500">
+                <td className="text-[12px] font-semibold text-info font-Manrope">
                   USER DETAILS
                 </td>
-                <td className="text-xs font-semibold text-gray-500">ACCESS</td>
-                <td className="text-xs font-semibold text-gray-500"></td>
+                <td className="text-[12px] font-semibold text-info font-Manrope">
+                  ACCESS
+                </td>
+                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
               </tr>
               {userInfo.map((x) => {
                 return <UsersTableRow x={x} />;
@@ -77,8 +82,8 @@ const Users = () => {
         </div>
 
         <div className="mb-6 mt-12">
-          <p className="font-bold text-2xl ">Additional contacts</p>
-          <p className="text-gray-500 mt-2">
+          <p className="font-bold text-[24px] ">Additional contacts</p>
+          <p className="text-info mt-2 text-[16px]">
             These are additional contacts that we have a record of, but have not
             signed up to this portal
           </p>
@@ -88,11 +93,13 @@ const Users = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-xs font-semibold text-gray-500">
+                <td className="text-[12px] font-semibold text-info font-Manrope">
                   FULL NAME
                 </td>
-                <td className="text-xs font-semibold text-gray-500">ACCESS</td>
-                <td className="text-xs font-semibold text-gray-500"></td>
+                <td className="text-[12px] font-semibold text-info font-Manrope">
+                  ACCESS
+                </td>
+                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
               </tr>
               {userInfo.map((x) => {
                 return <AdditionalContactsRow x={x} />;

@@ -4,11 +4,11 @@ import { PrimaryBtn } from "../Buttons";
 const RequestTraining = ({ x }) => {
   return (
     <tr>
-      <td className="text-sm">
+      <td className="text-[14px]">
         {" "}
-        <p>{x?.name}</p> <p>{x?.reqDate}</p>{" "}
+        <p>{x?.name}</p> <p className="text-[12px] text-info">{x?.reqDate}</p>{" "}
       </td>
-      <td className="text-sm">
+      <td className="text-[14px] text-Manrope">
         {x?.acc !== null ? (
           <>
             <p>{x?.acc.date}</p> <p>{x?.acc.time}</p>{" "}

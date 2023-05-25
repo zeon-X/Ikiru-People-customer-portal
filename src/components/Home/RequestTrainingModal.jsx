@@ -33,7 +33,7 @@ const RequestTrainingModal = () => {
           >
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-gray-400">
+                <span className="label-text text-info">
                   Purpose of the training
                 </span>
               </label>

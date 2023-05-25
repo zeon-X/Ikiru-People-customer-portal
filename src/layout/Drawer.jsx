@@ -9,6 +9,11 @@ import {
   selectedAccountSvg,
   supportSvg,
   userSvg,
+  homeSvgWhite,
+  billingSvgWhite,
+  userSvgWhite,
+  selectedAccountSvgWhite,
+  supportSvgWhite,
 } from "../assets/iconsSvg";
 
 const Drawer = () => {
@@ -36,17 +41,30 @@ const Drawer = () => {
           <ul className="menu p-4 w-[250px]  bg-white pt-[112px]">
             {/* <!-- Sidebar content here --> */}
             <li>
-              <NavLink to="/" className="flex justify-start items-center gap-4">
-                {homeSvg}
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex justify-start items-center gap-4 text-[14px] text-white bg-primary"
+                    : "flex justify-start items-center gap-4 text-[14px]"
+                }
+              >
+                {location?.pathname === "/" ? homeSvgWhite : homeSvg}
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="billing"
-                className="flex justify-start items-center gap-4"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex justify-start items-center gap-4 text-[14px] text-white bg-primary"
+                    : "flex justify-start items-center gap-4 text-[14px]"
+                }
               >
-                {billingSvg}
+                {location?.pathname === "/billing"
+                  ? billingSvgWhite
+                  : billingSvg}
                 Billing
               </NavLink>
             </li>
@@ -56,9 +74,9 @@ const Drawer = () => {
                 className="flex justify-between items-center gap-4 transition-all ease-in-out"
                 onClick={() => setIsSupportOpen(!isSupportOpen)}
               >
-                <div className="flex justify-start items-center gap-4 ">
+                <div className="flex justify-start items-center gap-4 text-[14px] ">
                   <span className={isSupportSelected ? "text-primary" : ""}>
-                    {supportSvg}
+                    {isSupportSelected ? supportSvgWhite : supportSvg}
                   </span>
                   Support
                 </div>
@@ -77,22 +95,22 @@ const Drawer = () => {
                 <ul className="menu w-full">
                   <li className="">
                     <NavLink to="support/dashboard">
-                      <p className="ml-8">Dashboard</p>
+                      <p className="ml-8  text-[14px]">Dashboard</p>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="support/cases">
-                      <p className="ml-8">Cases</p>
+                      <p className="ml-8 text-[14px]">Cases</p>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="support/create-cases">
-                      <p className="ml-8">Create Cases</p>
+                      <p className="ml-8 text-[14px]">Create Cases</p>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="support/databases">
-                      <p className="ml-8">Databases</p>
+                      <p className="ml-8 text-[14px]">Databases</p>
                     </NavLink>
                   </li>
                 </ul>
@@ -102,18 +120,28 @@ const Drawer = () => {
             <li>
               <NavLink
                 to="users"
-                className="flex justify-start items-center gap-4"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex justify-start items-center gap-4 text-[14px] text-white bg-primary"
+                    : "flex justify-start items-center gap-4 text-[14px]"
+                }
               >
-                {userSvg}
+                {location?.pathname === "/users" ? userSvgWhite : userSvg}
                 Users
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="select-account"
-                className="flex justify-start items-center gap-4"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex justify-start items-center gap-4 text-[14px] text-white bg-primary"
+                    : "flex justify-start items-center gap-4 text-[14px]"
+                }
               >
-                {selectedAccountSvg}
+                {location?.pathname === "/select-account"
+                  ? selectedAccountSvgWhite
+                  : selectedAccountSvg}
 
                 <p>Select Account</p>
               </NavLink>

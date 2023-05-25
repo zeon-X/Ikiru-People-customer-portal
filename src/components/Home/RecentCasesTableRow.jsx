@@ -4,12 +4,12 @@ import { PrimaryBtnFade } from "../Buttons";
 const RecentCasesTableRow = ({ x }) => {
   return (
     <tr>
-      <td className="text-sm">
+      <td className="text-[14px]">
         {x?.name?.slice(0, 26)}
         <span>{x?.name?.length > 26 ? ".." : ""}</span>
       </td>
-      <td className="text-sm">{x?.status}</td>
-      <td className="text-sm">
+      <td className="text-[14px]">{x?.status}</td>
+      <td className="text-[14px]">
         <PrimaryBtnFade
           btnText={
             x?.priority == 3

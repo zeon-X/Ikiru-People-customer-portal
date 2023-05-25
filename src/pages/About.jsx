@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div className="p-20">
       <div>
-        <p className="font-bold text-2xl mb-8">About Us</p>
-        <p className="text-gray-600">
+        <p className="font-bold text-[24px] mb-8">About Us</p>
+        <p className="text-info text-[16px]">
           This Privacy Policy describes how Substance collects, uses and
           discloses information, and what choices you have with respect to the
           information. <br /> <br />
@@ -15,10 +15,10 @@ const About = () => {
           section below.
         </p>
 
-        <p className="font-bold text-2xl mb-6 mt-12">
+        <p className="font-bold text-[24px] mb-6 mt-12">
           Applicability Of This Privacy Policy
         </p>
-        <p className="text-gray-600">
+        <p className="text-info text-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

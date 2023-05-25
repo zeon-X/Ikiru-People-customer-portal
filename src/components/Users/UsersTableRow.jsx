@@ -14,8 +14,8 @@ const UsersTableRow = ({ x }) => {
             />
           </div>
           <div>
-            <p className="text-lg">{x?.name}</p>
-            <p>{x?.email}</p>
+            <p className="text-[16px]">{x?.name}</p>
+            <p className="text-[12px] text-info">{x?.email}</p>
           </div>
         </div>
       </td>
@@ -23,7 +23,7 @@ const UsersTableRow = ({ x }) => {
         <div className="flex flex-wrap gap-1">
           {x?.access?.map((index) => {
             return (
-              <p className="bg-gray-100 text-gray-500 font-bold rounded-full px-3 py-1.5  text-xs ">
+              <p className="bg-gray-100 text-info font-bold rounded-full px-3 py-1.5  text-xs ">
                 {index}
               </p>
             );
@@ -31,7 +31,7 @@ const UsersTableRow = ({ x }) => {
         </div>
       </td>
       <td className=" ">
-        <button className="border px-[10px] py-[4px] rounded-[4px]">
+        <button className="border text-[14px] px-[10px] py-[4px] rounded-[4px]">
           Manage User
         </button>
       </td>
