@@ -6,8 +6,8 @@ const PrimaryBtn = ({ btnText, btnFunc, style, disabled }) => {
       style={{ ...style }}
       className={
         !disabled
-          ? "bg-[#448e4d]  font-semibold rounded-lg text-white"
-          : "bg-gray-300 font-semibold rounded-lg text-info"
+          ? "bg-[#448e4d]  font-medium rounded-lg text-white"
+          : "bg-gray-300 font-medium rounded-lg text-info"
       }
       onClick={() => btnFunc}
       disabled={disabled === 1 ? 1 : 0}

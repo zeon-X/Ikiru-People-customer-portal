@@ -23,6 +23,7 @@ const RequestTraining = ({ x }) => {
           style={{
             height: "28px",
             width: "60px",
+            fontSize: "14px",
           }}
           disabled={x?.join === 1 ? 0 : 1}
         />
