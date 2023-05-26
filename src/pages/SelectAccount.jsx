@@ -33,13 +33,13 @@ const SelectAccount = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   COMPANY NAME
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   STATUS
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
+                <td className="text-[12px] font-semibold text-info font-[Manrope]"></td>
               </tr>
               {accountInformation.map((x) => {
                 return <AccpetedAccountTableRow x={x} />;
@@ -56,13 +56,13 @@ const SelectAccount = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   REFERRENCES
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   STATUS
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
+                <td className="text-[12px] font-semibold text-info font-[Manrope]"></td>
               </tr>
               {requestInformation.map((x) => {
                 return <RequestedAccountTableRow x={x} />;

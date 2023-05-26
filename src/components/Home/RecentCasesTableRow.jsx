@@ -1,5 +1,6 @@
 import React from "react";
 import { PrimaryBtnFade } from "../Buttons";
+import PriorityBtnGenarator from "../PriorityBtnGenarator";
 
 const RecentCasesTableRow = ({ x }) => {
   return (
@@ -9,7 +10,10 @@ const RecentCasesTableRow = ({ x }) => {
         <span>{x?.name?.length > 26 ? ".." : ""}</span>
       </td>
       <td className="text-[14px]">{x?.status}</td>
-      <td className="text-[14px]">
+      <td>
+        <PriorityBtnGenarator x={x?.priority} />
+      </td>
+      {/* <td className="text-[14px]">
         <PrimaryBtnFade
           btnText={
             x?.priority == 3
@@ -54,7 +58,7 @@ const RecentCasesTableRow = ({ x }) => {
                 }
           }
         ></PrimaryBtnFade>
-      </td>
+      </td> */}
     </tr>
   );
 };

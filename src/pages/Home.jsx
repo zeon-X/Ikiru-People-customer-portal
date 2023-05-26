@@ -134,6 +134,7 @@ const Home = () => {
           })}
         </div>
 
+        {/* RECENT CASES TABLE */}
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-x-[24px] gap-y-[32px] justify-start items-start">
           <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
@@ -146,13 +147,13 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px]">
                 <tbody>
                   <tr>
-                    <td className="text-[12px] text-info font-Manrope">
+                    <td className="text-[12px] text-info font-[Manrope]">
                       CASE NAME
                     </td>
-                    <td className="text-[12px] text-info font-Manrope">
+                    <td className="text-[12px] text-info font-[Manrope]">
                       STATUS
                     </td>
-                    <td className="text-[12px] text-info font-Manrope">
+                    <td className="text-[12px] text-info font-[Manrope]">
                       PRIORITY
                     </td>
                   </tr>
@@ -166,6 +167,8 @@ const Home = () => {
               </table>
             </div>
           </div>
+
+          {/* WEBMINAR CASES TABLE */}
           <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
               icon={fill_icon2}
@@ -177,8 +180,12 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px]">
                 <tbody>
                   <tr>
-                    <td className="text-[12px] text-info font-Manrope">NAME</td>
-                    <td className="text-[12px] text-info font-Manrope">DATE</td>
+                    <td className="text-[12px] text-info font-[Manrope]">
+                      NAME
+                    </td>
+                    <td className="text-[12px] text-info font-[Manrope]">
+                      DATE
+                    </td>
                     <td></td>
                   </tr>
                   <tr className="p-4"></tr>
@@ -190,6 +197,8 @@ const Home = () => {
               </table>
             </div>
           </div>
+
+          {/* REQ TRAINING TABLE */}
           <div className="w-abc p-8 bg-white rounded-xl shadow ">
             <TableHeader
               icon={fill_icon3}
@@ -202,10 +211,10 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px] ">
                 <tbody>
                   <tr>
-                    <td className="text-[12px] text-info font-Manrope">
+                    <td className="text-[12px] text-info font-[Manrope]">
                       PURPOSE & REQUEST TIME
                     </td>
-                    <td className="text-[12px] text-info font-Manrope">
+                    <td className="text-[12px] text-info font-[Manrope]">
                       Date & Time
                     </td>
                     <td></td>
@@ -220,6 +229,8 @@ const Home = () => {
             </div>
           </div>
 
+          {/* USEFULL TABLE */}
+
           <div className="w-abc p-8 bg-white rounded-xl shadow">
             <TableHeader
               icon={fill_icon4}
@@ -231,7 +242,9 @@ const Home = () => {
               <table className="table table-compact  w-full mt-[26px] ">
                 <tbody>
                   <tr>
-                    <td className="text-[12px] text-info font-Manrope">List</td>
+                    <td className="text-[12px] text-info font-[Manrope]">
+                      List
+                    </td>
 
                     <td></td>
                   </tr>

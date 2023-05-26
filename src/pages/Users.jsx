@@ -66,13 +66,13 @@ const Users = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   USER DETAILS
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   ACCESS
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
+                <td className="text-[12px] font-semibold text-info font-[Manrope]"></td>
               </tr>
               {userInfo.map((x) => {
                 return <UsersTableRow x={x} />;
@@ -93,13 +93,13 @@ const Users = () => {
           <table className="table w-full  ">
             <tbody>
               <tr>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   FULL NAME
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope">
+                <td className="text-[12px] font-semibold text-info font-[Manrope]">
                   ACCESS
                 </td>
-                <td className="text-[12px] font-semibold text-info font-Manrope"></td>
+                <td className="text-[12px] font-semibold text-info font-[Manrope]"></td>
               </tr>
               {userInfo.map((x) => {
                 return <AdditionalContactsRow x={x} />;

@@ -9,7 +9,7 @@ const CreateCases = () => {
           <p className="font-bold text-[24px] ">Create Case</p>
           <button
             type=""
-            className="btn btn-primary text-[14px] normal-case gap-2 w-[212px]"
+            className="btn btn-primary text-[14px] normal-case gap-2 lg:w-[212px] sm:w-auto"
           >
             {downloadFile}
             <p> Download ISL Client</p>

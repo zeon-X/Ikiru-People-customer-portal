@@ -258,6 +258,57 @@ const sendSVG = (
   </svg>
 );
 
+const filterSvg = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10 18H14V16H10V18ZM3 6V8H21V6H3ZM6 13H18V11H6V13Z"
+      fill="#84818A"
+    />
+  </svg>
+);
+
+const arrowRight = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    width="24"
+    height="24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+    />
+  </svg>
+);
+
+const arrowLeft = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    width="24"
+    height="24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M15.75 19.5L8.25 12l7.5-7.5"
+    />
+  </svg>
+);
+
 export {
   arrowDown,
   arrowUp,
@@ -276,4 +327,7 @@ export {
   selectedAccountSvgWhite,
   downloadFile,
   sendSVG,
+  filterSvg,
+  arrowRight,
+  arrowLeft,
 };
