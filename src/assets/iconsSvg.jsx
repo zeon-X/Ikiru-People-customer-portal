@@ -228,6 +228,36 @@ const closeCross = (
   </svg>
 );
 
+const downloadFile = (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15.8337 7.5H12.5003V2.5H7.50033V7.5H4.16699L10.0003 13.3333L15.8337 7.5ZM4.16699 15V16.6667H15.8337V15H4.16699Z"
+      fill="white"
+    />
+  </svg>
+);
+
+const sendSVG = (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.33967 14L15.333 8L1.33967 2L1.33301 6.66667L11.333 8L1.33301 9.33333L1.33967 14Z"
+      fill="#FBFAFC"
+    />
+  </svg>
+);
+
 export {
   arrowDown,
   arrowUp,
@@ -244,4 +274,6 @@ export {
   homeSvgWhite,
   userSvgWhite,
   selectedAccountSvgWhite,
+  downloadFile,
+  sendSVG,
 };
