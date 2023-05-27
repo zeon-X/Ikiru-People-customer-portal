@@ -10,7 +10,7 @@ import attactmentPictureSample from "../../assets/CaseUpdate/attactment.png";
 const ChatMessageSent = ({ x }) => {
   const [isExpand, setIsExpand] = useState(false);
   return (
-    <div className="flex lg:gap-4 sm:gap-1 flex-row-reverse mb-8">
+    <div className="flex sm:flex-col gap-4  lg:flex-row-reverse lg:items-start sm:items-end mb-8">
       <div className="bg-warning rounded-full w-[46px] h-[46px] flex justify-center items-center">
         {personSvg}
       </div>
@@ -20,7 +20,9 @@ const ChatMessageSent = ({ x }) => {
         <div className="flex justify-between items-start">
           <div>
             {/* TITLE */}
-            <p className="text-[16px] font-semibold my-1">{x?.messageTitle}</p>
+            <p className="lg:text-[16px] sm:text-[14px] font-semibold my-1">
+              {x?.messageTitle}
+            </p>
 
             <div className="flex gap-4 font-[Manrope]">
               {/* ATTACTMENT */}

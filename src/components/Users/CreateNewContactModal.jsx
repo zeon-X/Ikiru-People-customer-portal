@@ -10,7 +10,7 @@ const CreateNewContactModal = () => {
             <p className="text-lg font-bold"> Add New Contact</p>
             <label
               htmlFor="AddNewContactModal"
-              className="btn btn-xs btn-circle "
+              className="rounded-full bg-info cursor-pointer p-0.5 flex justify-center items-center "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

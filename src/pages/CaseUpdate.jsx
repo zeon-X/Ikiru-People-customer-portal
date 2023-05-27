@@ -5,6 +5,7 @@ import StatusBtnGenarator from "../components/StatusBtnGenarator";
 import ChatMessageRecieved from "../components/CaseUpdate/ChatMessageRecieved";
 import ChatMessageSent from "../components/CaseUpdate/ChatMessageSent";
 import attactmentPictureSample from "../assets/CaseUpdate/attactment.png";
+import CaseUpdateModal from "../components/CaseUpdate/CaseUpdateModal";
 
 const casesData = [
   {
@@ -148,10 +149,14 @@ const CaseUpdate = () => {
     setCaseUpdate(cu);
   }, [location]);
 
-  console.log(caseUpdate?.updates);
+  // console.log(caseUpdate?.updates);
 
   return (
     <div className="p-[32px]">
+      {/* Put this part before </body> tag */}
+      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+      <CaseUpdateModal />
+
       <div>
         <div className="rounded-xl bg-white p-8">
           <div className="flex lg:flex-row sm:flex-col gap-4 justify-between items-start">
@@ -169,8 +174,8 @@ const CaseUpdate = () => {
             {/* PRIORITY BUTTONS & STATUS */}
 
             <div className="flex gap-4">
-              <PriorityBtnGenarator priority={caseUpdate.priority} />
-              <StatusBtnGenarator status={caseUpdate.status} />
+              <PriorityBtnGenarator priority={caseUpdate?.priority} />
+              <StatusBtnGenarator status={caseUpdate?.status} />
             </div>
           </div>
           <div className="mt-8">
@@ -190,9 +195,12 @@ const CaseUpdate = () => {
                 Total {caseUpdate?.updates?.length} updates
               </p>
             </div>
-            <button className="px-4 py-1.5 text-[14px] font-semibold bg-primary text-white rounded-lg ">
+            <label
+              htmlFor="my-modal-3"
+              className="px-4 py-1.5 text-[14px] font-semibold bg-primary text-white rounded-lg cursor-pointer"
+            >
               Add Update
-            </button>
+            </label>
           </div>
 
           {/* UPDATE */}

@@ -1,4 +1,5 @@
 import React from "react";
+import { closePopUp } from "../../assets/iconsSvg";
 
 const RequestTrainingModal = () => {
   return (
@@ -10,16 +11,9 @@ const RequestTrainingModal = () => {
             <p className="text-lg font-bold">Request for Training</p>
             <label
               htmlFor="reqTrainingModal"
-              className="btn btn-xs btn-circle "
+              className="rounded-full bg-info cursor-pointer p-0.5 flex justify-center items-center "
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="white"
-                className="w-5 h-5"
-              >
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
+              {closePopUp}
             </label>
           </div>
 

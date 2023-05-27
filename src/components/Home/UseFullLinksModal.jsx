@@ -8,7 +8,10 @@ const UseFullLinksModal = ({ props }) => {
           {/* TITLE AND CLOSE BTN */}
           <div className="w-full flex justify-between items-start ">
             <p className="text-lg font-bold">Details</p>
-            <label htmlFor="linksDetails" className="btn btn-xs btn-circle ">
+            <label
+              htmlFor="linksDetails"
+              className="rounded-full bg-info cursor-pointer p-0.5 flex justify-center items-center "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"

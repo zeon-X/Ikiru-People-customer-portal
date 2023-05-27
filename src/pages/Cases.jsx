@@ -1,6 +1,7 @@
 import React from "react";
 import { downloadFile, filterSvg } from "../assets/iconsSvg";
 import CasesRow from "../components/Cases/CasesRow";
+import attactmentPictureSample from "../assets/CaseUpdate/attactment.png";
 
 const casesData = [
   {
@@ -19,22 +20,22 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample, attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
@@ -48,30 +49,7 @@ const casesData = [
     createdOn: "23-05-2023",
     description:
       "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-    updates: [
-      {
-        updateFrom: "Update from ikiru",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "The screen are still crashing in my side.",
-        message:
-          "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-    ],
+    updates: [],
   },
   {
     id: "3",
@@ -83,30 +61,7 @@ const casesData = [
     createdOn: "23-05-2023",
     description:
       "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-    updates: [
-      {
-        updateFrom: "Update from ikiru",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "The screen are still crashing in my side.",
-        message:
-          "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-    ],
+    updates: [],
   },
   {
     id: "4",
@@ -124,22 +79,22 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
@@ -159,27 +114,26 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
 ];
-
 const Cases = () => {
   return (
     <div className="p-[32px] ">

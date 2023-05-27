@@ -9,7 +9,7 @@ import {
 const ChatMessageRecieved = ({ x }) => {
   const [isExpand, setIsExpand] = useState(false);
   return (
-    <div className="flex lg:gap-4 sm:gap-1   mb-8">
+    <div className="flex lg:flex-row sm:flex-col gap-4  mb-8">
       <div className="bg-primary rounded-full w-[46px] h-[46px] flex justify-center items-center">
         {clientSupportSvg}
       </div>
@@ -22,7 +22,9 @@ const ChatMessageRecieved = ({ x }) => {
         <div className="flex justify-between items-start">
           <div>
             {/* TITLE */}
-            <p className="text-[16px] font-semibold my-1">{x?.messageTitle}</p>
+            <p className="lg:text-[16px] sm:text-[14px] font-semibold my-1">
+              {x?.messageTitle}
+            </p>
 
             <div className="flex gap-4 font-[Manrope]">
               {/* ATTACTMENT */}
@@ -63,11 +65,11 @@ const ChatMessageRecieved = ({ x }) => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-start items-start gap-2">
             {x?.files?.map((img) => {
               return (
                 <img
-                  className="max-w-[518px] max-h-[175px] rounded"
+                  className="max-w-[430px] max-h-[145px] rounded"
                   src={img}
                   alt=""
                 />
