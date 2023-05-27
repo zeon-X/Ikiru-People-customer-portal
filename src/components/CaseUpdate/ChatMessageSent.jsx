@@ -10,7 +10,7 @@ import attactmentPictureSample from "../../assets/CaseUpdate/attactment.png";
 const ChatMessageSent = ({ x }) => {
   const [isExpand, setIsExpand] = useState(false);
   return (
-    <div className="flex gap-4 flex-row-reverse mb-8">
+    <div className="flex lg:gap-4 sm:gap-1 flex-row-reverse mb-8">
       <div className="bg-warning rounded-full w-[46px] h-[46px] flex justify-center items-center">
         {personSvg}
       </div>

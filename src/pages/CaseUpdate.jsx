@@ -154,7 +154,7 @@ const CaseUpdate = () => {
     <div className="p-[32px]">
       <div>
         <div className="rounded-xl bg-white p-8">
-          <div className="flex justify-between items-start">
+          <div className="flex lg:flex-row sm:flex-col gap-4 justify-between items-start">
             {/* TITLE REF  */}
             <div>
               <p className="text-[16px] font-semibold">
@@ -182,7 +182,8 @@ const CaseUpdate = () => {
         </div>
 
         <div className="rounded-xl bg-white p-8 mt-10">
-          <div className="flex justify-between items-center">
+          {/* CASE UPDATE INFO AND ADD UPDATE BTN */}
+          <div className="flex  justify-between items-center">
             <div>
               <p className="text-[16px] font-semibold">Case Updates</p>
               <p className="text-primary text-[14px] font-[Manrope] font-medium ">
@@ -194,7 +195,8 @@ const CaseUpdate = () => {
             </button>
           </div>
 
-          <div className="bg-accent p-8 rounded-xl mt-8 min-h-[406px] max-h-[550px] overflow-y-scroll">
+          {/* UPDATE */}
+          <div className="bg-accent lg:p-8 sm:p-2 rounded-xl mt-8 min-h-[406px] max-h-[700px] overflow-y-scroll">
             {caseUpdate?.updates?.length === 0 ? (
               <div className="h-[365px] w-full flex justify-center items-center">
                 <p className="text-[20px] font-medium">No Updates</p>

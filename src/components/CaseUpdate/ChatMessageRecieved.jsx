@@ -9,7 +9,7 @@ import {
 const ChatMessageRecieved = ({ x }) => {
   const [isExpand, setIsExpand] = useState(false);
   return (
-    <div className="flex gap-4  mb-8">
+    <div className="flex lg:gap-4 sm:gap-1   mb-8">
       <div className="bg-primary rounded-full w-[46px] h-[46px] flex justify-center items-center">
         {clientSupportSvg}
       </div>
