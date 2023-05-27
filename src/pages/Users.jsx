@@ -62,7 +62,7 @@ const Users = () => {
           </div>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
+        <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>
@@ -89,7 +89,7 @@ const Users = () => {
           </p>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
+        <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>

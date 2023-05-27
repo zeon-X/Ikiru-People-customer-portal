@@ -1,4 +1,4 @@
-const BillingBtn = ({ btnText, isActive, index, onClickFunc }) => {
+const DatabaseBtn = ({ btnText, isActive, index, onClickFunc }) => {
   return isActive ? (
     <button
       onClick={() => {
@@ -22,4 +22,4 @@ const BillingBtn = ({ btnText, isActive, index, onClickFunc }) => {
     </button>
   );
 };
-export default BillingBtn;
+export default DatabaseBtn;

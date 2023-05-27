@@ -29,7 +29,7 @@ const SelectAccount = () => {
           </button>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
+        <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>
@@ -52,7 +52,7 @@ const SelectAccount = () => {
           <p className="font-bold text-[24px] ">Requested</p>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl mt-[26px] overflow-x-auto">
+        <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
           <table className="table w-full  ">
             <tbody>
               <tr>

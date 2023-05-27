@@ -200,7 +200,7 @@ const Cases = () => {
           </div>
         </div>
 
-        <div className="p-8 bg-white rounded-2xl">
+        <div className="p-8 bg-white rounded-xl">
           <div className="overflow-x-auto">
             <div className="grid grid-cols-5 justify-center items-center lg:min-w-[1026px] sm:min-w-[700px]">
               <p className="text-[12px] text-info font-[Manrope] uppercase">
