@@ -5,18 +5,16 @@ const Login = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="mx-auto min-h-screen max-w-[1440px] flex justify-center items-center">
-        <div className="w-[834px]  flex flex-col justify-center items-center h-full">
-          <div className="flex flex-col items-center h-full">
-            <img width={296} height={101} src={logo} alt="" />
-            <p className="">
+      <div className="mx-auto min-h-screen max-w-[1440px] flex lg:flex-row sm:flex-col justify-center items-center">
+        <div className="lg:w-[834px] sm:w-auto  flex flex-col justify-center items-center h-full">
+          <img width={296} height={101} src={logo} alt="" />{" "}
+          <div className="flex flex-col items-center h-full px-[32px]">
+            <p className=" text-center">
               This is the customer support portal for our customers in
-            </p>
-            <p className="">
+              <br />
               need to supports, Trainings, Report registration and billing.
             </p>
           </div>
-
           <img
             width={620}
             height={620}
@@ -25,12 +23,12 @@ const Login = () => {
           />
         </div>
 
-        <div className="w-[606px] bg-[#FAFAFA] min-h-screen flex flex-col justify-center items-center">
+        <div className="lg:w-[606px] sm:w-full bg-[#FAFAFA] min-h-screen flex flex-col justify-center items-center">
           <div>
             <p className="font-bold text-xl">Login</p>
 
             <form className="my-4" action="">
-              <div className="form-control w-[423px] max-w-[423px]">
+              <div className="form-control lg:w-[423px] sm:w-full max-w-[423px]">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
@@ -44,7 +42,7 @@ const Login = () => {
                 </label>
               </div>
 
-              <div className="form-control w-[423px] max-w-[423px]">
+              <div className="form-control lg:w-[423px] sm:w-full max-w-[423px]">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
