@@ -2,6 +2,8 @@ import React from "react";
 import { downloadFile, filterSvg } from "../assets/iconsSvg";
 import CasesRow from "../components/Cases/CasesRow";
 import attactmentPictureSample from "../assets/CaseUpdate/attactment.png";
+import CasesFilter from "../components/Cases/CasesFilter";
+import SearchBox from "../components/Cases/SearchBox";
 
 const casesData = [
   {
@@ -138,15 +140,25 @@ const Cases = () => {
   return (
     <div className="p-[32px] ">
       <div>
-        <div className="mb-6 flex justify-between items-start">
-          <p className="font-bold text-[24px] ">Create Case</p>
-          <div className="flex justify-center items-center gap-3">
-            <button className="btn  w-[48px] h-[48px] p-1 bg-white">
-              {filterSvg}
-            </button>
+        <div className="mb-6 flex lg:flex-row sm:flex-col gap-2 justify-between items-start">
+          <p className="font-bold text-[24px]">Cases</p>
+          <div className="flex flex-wrap  items-center gap-3">
+            {/* SEARCH */}
+            <SearchBox />
+            {/* FILTER*/}
+            <div className="dropdown dropdown-end">
+              <label
+                tabIndex={0}
+                className="btn m-1  w-[48px] h-[48px] p-1 bg-white"
+              >
+                {filterSvg}
+              </label>
+              <CasesFilter />
+            </div>
+            {/* DOWNLOAD BTN */}
             <button
               type=""
-              className="btn btn-primary text-[14px] normal-case gap-2 lg:w-[212px] sm:w-auto"
+              className="btn btn-primary text-[14px] normal-case gap-2 lg:w-[212px] sm:w-auto text-white "
             >
               {downloadFile}
               <p> Download ISL Client</p>

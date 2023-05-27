@@ -22,7 +22,7 @@ const SelectAccount = () => {
   return (
     <div className="p-[32px] ">
       <div>
-        <div className="mb-6 flex justify-between items-start">
+        <div className="mb-6 flex  lg:flex-row sm:flex-col gap-2 justify-between items-start">
           <p className="font-bold text-[24px] ">Select Account</p>
           <button type="" className="btn btn-primary text-[14px] normal-case">
             Link to New Account

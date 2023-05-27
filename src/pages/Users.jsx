@@ -50,9 +50,9 @@ const Users = () => {
           <p className="font-bold text-[24px] ">Users</p>
 
           <div className="">
-            <label htmlFor="invitationSuccessModal" className="btn mx-2">
+            {/* <label htmlFor="invitationSuccessModal" className="btn mx-2">
               Invitation Success Modal
-            </label>
+            </label> */}
             <label
               htmlFor="AddNewContactModal"
               className="btn btn-primary text-[14px] normal-case"

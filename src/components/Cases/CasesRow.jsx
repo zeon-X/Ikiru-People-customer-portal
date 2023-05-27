@@ -9,7 +9,10 @@ const CasesRow = ({ x, len, index }) => {
   return (
     <div className="py-4 lg:min-w-[1026px] sm:min-w-[700px]">
       {/* ROW DATA */}
-      <div className="grid grid-cols-5  justify-center items-center text-[14px]">
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="grid grid-cols-5 cursor-pointer justify-center items-center text-[14px]"
+      >
         <p className="">{x?.caseName}</p>
         <p className="">{x?.reference}</p>
         <p className="">{x?.status}</p>
