@@ -60,7 +60,7 @@ const CasesTable = () => {
                           fontSize: "14px",
                         }}
                       >
-                        <PriorityBtnGenarator x={x.priority} />
+                        <PriorityBtnGenarator priority={x.priority} />
                       </td>
                       <td
                         style={{

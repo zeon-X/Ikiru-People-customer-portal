@@ -18,6 +18,7 @@ import SupportDashboard from "./pages/SupportDashboard";
 import Cases from "./pages/Cases";
 import CreateCases from "./pages/CreateCases";
 import Databases from "./pages/Databases";
+import CaseUpdate from "./pages/CaseUpdate";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
           >
             <Route path="dashboard" element={<SupportDashboard />} />
             <Route path="cases" element={<Cases />} />
+            <Route path="cases/:slug" element={<CaseUpdate />} />
             <Route path="create-cases" element={<CreateCases />} />
             <Route path="databases" element={<Databases />} />
           </Route>

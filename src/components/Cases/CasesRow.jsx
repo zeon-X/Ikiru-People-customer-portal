@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import PriorityBtnGenarator from "../PriorityBtnGenarator";
 import { arrowDown, arrowUp } from "../../assets/iconsSvg";
+import { useNavigate } from "react-router-dom";
 
 const CasesRow = ({ x, len, index }) => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="py-4 lg:min-w-[1026px] sm:min-w-[700px]">
@@ -12,7 +14,7 @@ const CasesRow = ({ x, len, index }) => {
         <p className="">{x?.reference}</p>
         <p className="">{x?.status}</p>
         <div className="">
-          <PriorityBtnGenarator x={x.priority} />
+          <PriorityBtnGenarator priority={x.priority} />
         </div>
         {/* Toggle Btn */}
         <div className="flex gap-10">
@@ -31,7 +33,16 @@ const CasesRow = ({ x, len, index }) => {
         }
       >
         <p>{x.description}</p>
-        <button className="text-primary mt-4">See Full Details</button>
+        <button
+          onClick={() =>
+            navigate(
+              `/support/cases/${x?.caseName?.replace(/ /g, "-")}?id=${x?.id}`
+            )
+          }
+          className="text-primary mt-4"
+        >
+          See Full Details
+        </button>
       </div>
       <div className={len - 1 === index ? "" : "border-b mt-8"}></div>
     </div>

@@ -11,7 +11,7 @@ const RecentCasesTableRow = ({ x }) => {
       </td>
       <td className="text-[14px]">{x?.status}</td>
       <td>
-        <PriorityBtnGenarator x={x?.priority} />
+        <PriorityBtnGenarator priority={x?.priority} />
       </td>
       {/* <td className="text-[14px]">
         <PrimaryBtnFade

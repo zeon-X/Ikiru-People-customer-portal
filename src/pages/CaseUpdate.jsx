@@ -1,6 +1,10 @@
-import React from "react";
-import { downloadFile, filterSvg } from "../assets/iconsSvg";
-import CasesRow from "../components/Cases/CasesRow";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import PriorityBtnGenarator from "../components/PriorityBtnGenarator";
+import StatusBtnGenarator from "../components/StatusBtnGenarator";
+import ChatMessageRecieved from "../components/CaseUpdate/ChatMessageRecieved";
+import ChatMessageSent from "../components/CaseUpdate/ChatMessageSent";
+import attactmentPictureSample from "../assets/CaseUpdate/attactment.png";
 
 const casesData = [
   {
@@ -19,22 +23,22 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample, attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
@@ -48,30 +52,7 @@ const casesData = [
     createdOn: "23-05-2023",
     description:
       "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-    updates: [
-      {
-        updateFrom: "Update from ikiru",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "The screen are still crashing in my side.",
-        message:
-          "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-    ],
+    updates: [],
   },
   {
     id: "3",
@@ -83,30 +64,7 @@ const casesData = [
     createdOn: "23-05-2023",
     description:
       "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-    updates: [
-      {
-        updateFrom: "Update from ikiru",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "We have tried to solve the issue",
-        message: "",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-      {
-        updateFrom: "Me",
-        messageTitle: "The screen are still crashing in my side.",
-        message:
-          "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
-        time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
-      },
-    ],
+    updates: [],
   },
   {
     id: "4",
@@ -124,22 +82,22 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
@@ -159,94 +117,99 @@ const casesData = [
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "We have tried to solve the issue",
         message: "",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
       {
-        updateFrom: "Me",
+        updateFrom: "",
         messageTitle: "The screen are still crashing in my side.",
         message:
           "You are responsible for operations, service, or customer support and face challenges trying to communicate complex procedures to a global market effectively. Traditional methods don’t work and are laborious, costly and error prone.",
         time: "17 May, 2023, 17:56 ",
-        files: ["attatchment.jpg"],
+        files: [attactmentPictureSample],
       },
     ],
   },
 ];
 
-const Cases = () => {
+const CaseUpdate = () => {
+  const location = useLocation();
+  const [caseUpdate, setCaseUpdate] = useState({});
+
+  useEffect(() => {
+    let id = location?.search?.split("=")[1];
+    let cu = casesData.find((x) => x.id === id);
+    setCaseUpdate(cu);
+  }, [location]);
+
+  console.log(caseUpdate?.updates);
+
   return (
-    <div className="p-[32px] ">
+    <div className="p-[32px]">
       <div>
-        <div className="mb-6 flex justify-between items-start">
-          <p className="font-bold text-[24px] ">Create Case</p>
-          <div className="flex justify-center items-center gap-3">
-            <button className="btn  w-[48px] h-[48px] p-1 bg-white">
-              {filterSvg}
-            </button>
-            <button
-              type=""
-              className="btn btn-primary text-[14px] normal-case gap-2 lg:w-[212px] sm:w-auto"
-            >
-              {downloadFile}
-              <p> Download ISL Client</p>
-            </button>
-          </div>
-        </div>
-
-        <div className="p-8 bg-white rounded-xl">
-          <div className="overflow-x-auto">
-            <div className="grid grid-cols-5 justify-center items-center lg:min-w-[1026px] sm:min-w-[700px]">
-              <p className="text-[12px] text-info font-[Manrope] uppercase">
-                TITLE
-              </p>
-              <p className="text-[12px] text-info font-[Manrope] uppercase">
-                REFERENCE
-              </p>
-              <p className="text-[12px] text-info font-[Manrope] uppercase">
-                STATUS
-              </p>
-              <p className="text-[12px] text-info font-[Manrope] uppercase">
-                PRIORITY
-              </p>
-              <p className="text-[12px] text-info font-[Manrope] uppercase">
-                CREATED ON
-              </p>
-              <p></p>
-            </div>
-            <div className="border-b my-6 lg:min-w-[1026px] sm:min-w-[700px]"></div>
-
+        <div className="rounded-xl bg-white p-8">
+          <div className="flex justify-between items-start">
+            {/* TITLE REF  */}
             <div>
-              {casesData.map((x, index) => {
-                return (
-                  <CasesRow
-                    x={x}
-                    len={casesData.length}
-                    index={index}
-                    key={index}
-                  />
-                );
-              })}
+              <p className="text-[16px] font-semibold">
+                {caseUpdate?.caseTitle}
+              </p>
+              <div className="flex gap-4 text-[14px] text-info font-[Manrope] mt-2">
+                <p>Reference : {caseUpdate?.reference}</p>
+                <p>• Created on : {caseUpdate?.createdOn}</p>
+              </div>
             </div>
+
+            {/* PRIORITY BUTTONS & STATUS */}
+
+            <div className="flex gap-4">
+              <PriorityBtnGenarator priority={caseUpdate.priority} />
+              <StatusBtnGenarator status={caseUpdate.status} />
+            </div>
+          </div>
+          <div className="mt-8">
+            <p className="text-[14px] font-semibold">Description</p>
+            <p className="text-[14px] text-info font-[Manrope] mt-2">
+              {caseUpdate?.description}
+            </p>
           </div>
         </div>
 
-        <div className="flex justify-between mt-[24px]">
-          <div></div>
-          <div>
-            <div className="btn-group">
-              <button className="btn">1</button>
-              <button className="btn">2</button>
-              <button className="btn btn-disabled">...</button>
-              <button className="btn">99</button>
-              <button className="btn">100</button>
+        <div className="rounded-xl bg-white p-8 mt-10">
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="text-[16px] font-semibold">Case Updates</p>
+              <p className="text-primary text-[14px] font-[Manrope] font-medium ">
+                Total {caseUpdate?.updates?.length} updates
+              </p>
             </div>
+            <button className="px-4 py-1.5 text-[14px] font-semibold bg-primary text-white rounded-lg ">
+              Add Update
+            </button>
+          </div>
+
+          <div className="bg-accent p-8 rounded-xl mt-8 min-h-[406px] max-h-[550px] overflow-y-scroll">
+            {caseUpdate?.updates?.length === 0 ? (
+              <div className="h-[365px] w-full flex justify-center items-center">
+                <p className="text-[20px] font-medium">No Updates</p>
+              </div>
+            ) : (
+              <div>
+                {caseUpdate?.updates?.map((x, index) => {
+                  return x?.updateFrom == "" ? (
+                    <ChatMessageSent x={x} key={index} />
+                  ) : (
+                    <ChatMessageRecieved x={x} key={index} />
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -254,4 +217,4 @@ const Cases = () => {
   );
 };
 
-export default Cases;
+export default CaseUpdate;

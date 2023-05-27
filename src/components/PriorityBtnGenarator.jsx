@@ -1,10 +1,10 @@
 import React from "react";
 
-const PriorityBtnGenarator = ({ x }) => {
+const PriorityBtnGenarator = ({ priority }) => {
   return (
     <button
       style={
-        x === 4
+        priority === 4
           ? {
               backgroundColor: "#e9faf7",
               color: "#20c9ac",
@@ -12,7 +12,7 @@ const PriorityBtnGenarator = ({ x }) => {
               fontSize: 12,
               padding: "3px 8px",
             }
-          : x === 3
+          : priority === 3
           ? {
               backgroundColor: "#eeedff",
               color: "#5542f6",
@@ -20,7 +20,7 @@ const PriorityBtnGenarator = ({ x }) => {
               fontSize: 12,
               padding: "3px 8px",
             }
-          : x === 2
+          : priority === 2
           ? {
               backgroundColor: "#f6ede4",
               color: "#ffa043",
@@ -28,7 +28,7 @@ const PriorityBtnGenarator = ({ x }) => {
               fontSize: 12,
               padding: "3px 8px",
             }
-          : x === 1
+          : priority === 1
           ? {
               backgroundColor: "#ffebe6",
               color: "red",
@@ -46,13 +46,13 @@ const PriorityBtnGenarator = ({ x }) => {
       }
       className="rounded px-2"
     >
-      {x === 4
+      {priority === 4
         ? "P4"
-        : x === 3
+        : priority === 3
         ? "P3"
-        : x === 2
+        : priority === 2
         ? "P2"
-        : x === 1
+        : priority === 1
         ? "P1"
         : "Not Set"}
     </button>
