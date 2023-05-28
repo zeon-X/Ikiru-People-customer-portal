@@ -22,7 +22,7 @@ const CreateCases = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isProductSelected, setIsProductSelected] = useState(false);
 
-  console.log(isProductSelected);
+  // console.log(isProductSelected);
   return (
     <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
       <div>
