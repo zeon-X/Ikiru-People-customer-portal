@@ -123,7 +123,7 @@ const Billing = () => {
             <p className="font-bold text-[24px] ">Billing</p>
 
             {/* BULLING BUTTONS */}
-            <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
+            <div className="mt-[29px] flex flex-row pb-6 overflow-x-auto gap-6">
               {billingButtonsInfo.map((x, index) => {
                 return (
                   <BillingBtn
@@ -141,7 +141,7 @@ const Billing = () => {
 
         <div className="p-[34px] mx-auto max-w-[1190px] h-full">
           <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
-            <table className=" w-full  ">
+            <table className=" overflow-x-auto w-full  min-w-[500px]">
               <tbody>
                 <tr>
                   <td className="text-[12px] font-semibold text-info font-[Manrope] pb-4 ">

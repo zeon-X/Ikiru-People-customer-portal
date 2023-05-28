@@ -17,13 +17,14 @@ import fill_icon4 from "../assets/Home/link_fill.svg";
 import RequestTrainingModal from "../components/Home/RequestTrainingModal";
 import RequestReceivedSuccessModal from "../components/Home/RequestReceivedSuccessModal";
 import UseFullLinksModal from "../components/Home/UseFullLinksModal";
+import { useNavigate } from "react-router-dom";
 
 const HomePortalInfo = [
   {
     icon: icon1,
     title: "Create Support Case",
     subtitle: "Register new case",
-    nav: "",
+    nav: "/support/create-cases",
     id: "",
   },
   {
@@ -102,12 +103,15 @@ const TableHeader = ({ icon, title, btnName, btnFunc }) => {
         <img width={20} height={20} src={icon} alt="icon" />
         <p className="font-bold text-[16px] text-Manrope">{title}</p>
       </div>
-      <button className="text-primary text-[13px]">{btnName}</button>
+      <button onClick={btnFunc} className="text-primary text-[13px]">
+        {btnName}
+      </button>
     </div>
   );
 };
 
 const Home = () => {
+  const navigate = useNavigate();
   const [usefullLinksDetails, setUsefullLinksDetails] = useState({});
   return (
     <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
@@ -141,7 +145,7 @@ const Home = () => {
               icon={fill_icon1}
               title="Recent Cases"
               btnName="View all cases"
-              btnFunc=""
+              btnFunc={() => navigate("/support/cases")}
             />
             <div className="overflow-x-auto">
               <table className="table table-compact  w-full mt-[26px]">
@@ -174,7 +178,7 @@ const Home = () => {
               icon={fill_icon2}
               title="Webinars"
               btnName="View all"
-              btnFunc=""
+              btnFunc={() => {}}
             />
             <div className="overflow-x-auto">
               <table className="table table-compact  w-full mt-[26px]">
@@ -204,7 +208,7 @@ const Home = () => {
               icon={fill_icon3}
               title="Requested Training"
               btnName="View all"
-              btnFunc=""
+              btnFunc={() => {}}
             />
 
             <div className="overflow-x-auto">
@@ -236,7 +240,7 @@ const Home = () => {
               icon={fill_icon4}
               title="Useful links"
               btnName="View all"
-              btnFunc=""
+              btnFunc={() => {}}
             />
             <div className="overflow-x-auto">
               <table className="table table-compact  w-full mt-[26px] ">

@@ -25,11 +25,11 @@ const Header = () => {
           />
         </div>
 
-        <ul className="menu menu-horizontal">
+        <ul className="menu menu-horizontal text-[14px]">
           <li tabIndex={0}>
             <a className="border rounded-lg">
               <p className="lg:block sm:hidden">Manange Profile</p>
-              <p className="sm:block lg:hidden">Mng. Profile</p>
+              <p className="sm:block lg:hidden">Profile</p>
               {arrowDownBold}
             </a>
             <ul className="p-2 bg-base-100 w-[175px]">

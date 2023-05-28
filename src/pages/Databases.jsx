@@ -130,7 +130,7 @@ const Databases = () => {
             <p className="font-bold text-[24px] ">Database</p>
 
             {/* BULLING BUTTONS */}
-            <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
+            <div className="mt-[29px] flex flex-row pb-6 overflow-x-auto  gap-6">
               {billingButtonsInfo.map((x, index) => {
                 return (
                   <DatabaseBtn
