@@ -25,14 +25,20 @@ const Header = () => {
           />
         </div>
 
-        <ul className="menu menu-horizontal text-[14px]">
-          <li tabIndex={0}>
-            <a className="border rounded-lg">
+        <div className=" text-[14px] ">
+          <div className="dropdown dropdown-end">
+            <a
+              tabIndex={1}
+              className="cursor-pointer border rounded-lg flex gap-2 p-4"
+            >
               <p className="lg:block sm:hidden">Manange Profile</p>
               <p className="sm:block lg:hidden">Profile</p>
               {arrowDownBold}
             </a>
-            <ul className="p-2 bg-base-100 w-[175px]">
+            <ul
+              tabIndex={1}
+              className="dropdown-content menu shadow  p-2 bg-base-100 w-[175px]"
+            >
               <li>
                 <NavLink to="/my-profile">My Profile</NavLink>
               </li>
@@ -49,8 +55,8 @@ const Header = () => {
                 <button className="btn btn-secondary">Logout</button>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
