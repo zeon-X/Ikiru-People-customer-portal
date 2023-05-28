@@ -123,28 +123,30 @@ const Databases = () => {
     },
   ]);
   return (
-    <div className="">
+    <div className=" ">
       <div>
-        <div className="w-full bg-white p-[34px]">
-          <p className="font-bold text-[24px] ">Billing</p>
+        <div className=" bg-white border">
+          <div className="w-full bg-white  p-[34px]   mx-auto max-w-[1190px] h-full">
+            <p className="font-bold text-[24px] ">Database</p>
 
-          {/* BULLING BUTTONS */}
-          <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
-            {billingButtonsInfo.map((x, index) => {
-              return (
-                <DatabaseBtn
-                  key={x?.id}
-                  index={index}
-                  btnText={x?.name}
-                  isActive={activeBtnNo === x?.id ? 1 : 0}
-                  onClickFunc={setActiveBtnNo}
-                ></DatabaseBtn>
-              );
-            })}
+            {/* BULLING BUTTONS */}
+            <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
+              {billingButtonsInfo.map((x, index) => {
+                return (
+                  <DatabaseBtn
+                    key={x?.id}
+                    index={index}
+                    btnText={x?.name}
+                    isActive={activeBtnNo === x?.id ? 1 : 0}
+                    onClickFunc={setActiveBtnNo}
+                  ></DatabaseBtn>
+                );
+              })}
+            </div>
           </div>
         </div>
 
-        <div className="px-[32px] flex flex-wrap justify-between items-start ">
+        <div className=" flex flex-wrap justify-between items-start  p-[34px] mx-auto max-w-[1190px] h-full">
           <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto max-w-[700px] w-full">
             <table className="table w-full  ">
               <tbody>

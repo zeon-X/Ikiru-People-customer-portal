@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-full h-full">
+    <div className="min-h-full  mx-auto max-w-[1190px] h-full">
       <div className="flex min-h-full h-full relative">
         <div className="h-full sticky top-0">
           <div className="lg:min-w-[314px] sm:min-w-[150px] border lg:p-[32px] sm:p-6 h-full bg-white flex flex-col overflow-y-auto ">

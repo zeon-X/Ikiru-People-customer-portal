@@ -110,7 +110,7 @@ const TableHeader = ({ icon, title, btnName, btnFunc }) => {
 const Home = () => {
   const [usefullLinksDetails, setUsefullLinksDetails] = useState({});
   return (
-    <div className="p-[32px] ">
+    <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
       {/* MODALS */}
       <input type="checkbox" id="reqTrainingModal" className="modal-toggle" />
       <RequestTrainingModal />

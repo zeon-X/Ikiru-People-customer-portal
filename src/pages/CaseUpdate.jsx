@@ -152,7 +152,7 @@ const CaseUpdate = () => {
   // console.log(caseUpdate?.updates);
 
   return (
-    <div className="p-[32px]">
+    <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
       <CaseUpdateModal />

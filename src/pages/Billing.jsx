@@ -116,28 +116,30 @@ const Billing = () => {
   });
 
   return (
-    <div className=" ">
+    <div className="">
       <div>
-        <div className="w-full bg-white p-[34px]">
-          <p className="font-bold text-[24px] ">Billing</p>
+        <div className="w-full bg-white border">
+          <div className="w-full  p-[34px]  mx-auto max-w-[1190px] h-full">
+            <p className="font-bold text-[24px] ">Billing</p>
 
-          {/* BULLING BUTTONS */}
-          <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
-            {billingButtonsInfo.map((x, index) => {
-              return (
-                <BillingBtn
-                  key={x?.id}
-                  index={index}
-                  btnText={x?.name}
-                  isActive={activeBtnNo === x?.id ? 1 : 0}
-                  onClickFunc={setActiveBtnNo}
-                ></BillingBtn>
-              );
-            })}
+            {/* BULLING BUTTONS */}
+            <div className="mt-[29px] grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
+              {billingButtonsInfo.map((x, index) => {
+                return (
+                  <BillingBtn
+                    key={x?.id}
+                    index={index}
+                    btnText={x?.name}
+                    isActive={activeBtnNo === x?.id ? 1 : 0}
+                    onClickFunc={setActiveBtnNo}
+                  ></BillingBtn>
+                );
+              })}
+            </div>
           </div>
         </div>
 
-        <div className="px-[32px]">
+        <div className="p-[34px] mx-auto max-w-[1190px] h-full">
           <div className="p-8 bg-white rounded-xl mt-[26px] overflow-x-auto">
             <table className=" w-full  ">
               <tbody>

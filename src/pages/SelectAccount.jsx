@@ -20,7 +20,7 @@ const requestInformation = [
 
 const SelectAccount = () => {
   return (
-    <div className="p-[32px] ">
+    <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
       <div>
         <div className="mb-6 flex  lg:flex-row sm:flex-col gap-2 justify-between items-start">
           <p className="font-bold text-[24px] ">Select Account</p>

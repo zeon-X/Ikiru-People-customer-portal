@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import ManageProfile from "./pages/ManageProfile";
 import MyProfile from "./pages/MyProfile";
 import SelectAccount from "./pages/SelectAccount";
 import Users from "./pages/Users";
@@ -105,14 +104,7 @@ function App() {
               </RequireAuth>
             }
           />
-          <Route
-            path="manage-profile"
-            element={
-              <RequireAuth>
-                <ManageProfile />
-              </RequireAuth>
-            }
-          />
+
           <Route
             path="my-profile"
             element={

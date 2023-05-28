@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className=" mx-auto max-w-[1190px] h-full">
       <div className="mx-auto min-h-screen max-w-[1440px] flex lg:flex-row sm:flex-col  justify-center items-center">
         <div className="lg:w-[834px] sm:w-auto  flex flex-col justify-center items-center h-full">
           <img width={296} height={101} src={logo} alt="" />

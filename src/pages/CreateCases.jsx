@@ -3,7 +3,7 @@ import { downloadFile, sendSVG } from "../assets/iconsSvg";
 
 const CreateCases = () => {
   return (
-    <div className="p-[32px] ">
+    <div className="p-[32px]  mx-auto max-w-[1190px] h-full">
       <div>
         <div className="mb-6 flex justify-between items-start">
           <p className="font-bold text-[24px] ">Create Case</p>

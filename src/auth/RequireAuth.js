@@ -9,7 +9,7 @@ const RequireAuth = ({ children }) => {
   // }
 
   // return <Navigate to="/login" />;
-  return <div className="mx-auto max-w-[1190px] h-full">{children}</div>;
+  return <div className="">{children}</div>;
 };
 
 export default RequireAuth;

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const MyProfile = () => {
   const [userName, setUserName] = useState("maxberty");
   return (
-    <div className="p-[32px]">
+    <div className="p-[32px] mx-auto max-w-[1190px] h-full">
       <div>
         <p className="font-bold text-[24px] mb-12">My Profile</p>
 
