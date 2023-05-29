@@ -62,7 +62,7 @@ const CreateCases = () => {
                   className={
                     !isProductSelected
                       ? "hidden"
-                      : "text-[12px] text-info cursor-pointer"
+                      : "text-[12px] text-primary cursor-pointer underline "
                   }
                 >
                   {isToggleActive ? "Close product info" : "See product info"}

@@ -19,14 +19,14 @@ const ChatMessageRecieved = ({ x }) => {
           Update from {x?.updateFrom}
         </p>
         {/* CHAT SHORT */}
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start  gap-2">
           <div>
             {/* TITLE */}
             <p className="lg:text-[16px] sm:text-[14px] font-semibold my-1">
               {x?.messageTitle}
             </p>
 
-            <div className="flex gap-4 font-[Manrope]">
+            <div className="flex lg:flex-row sm:flex-wrap lg:gap-4 sm:gap-0  font-[Manrope]">
               {/* ATTACTMENT */}
               <div
                 className={
@@ -38,18 +38,22 @@ const ChatMessageRecieved = ({ x }) => {
                 }
               >
                 <span>{attachmentSvg}</span>
-                <p className="text-[12px] text-info ">{"attatchment.jpg"}</p>
+                <p className="text-[12px] text-info ">
+                  {x?.files?.length + " attatchments"}
+                </p>
               </div>
 
               {/*   DATE */}
-              <p className="text-[12px] text-info ">• {x?.time} </p>
+              <p className="text-[12px] text-info ">
+                {!isExpand ? "•" : ""} {x?.time}{" "}
+              </p>
             </div>
           </div>
 
           {/* EXPAND BTN */}
           <button
             onClick={() => setIsExpand(!isExpand)}
-            className="rounded-full w-[40px] h-[40px] bg-[#ebeaed] flex justify-center items-center "
+            className="rounded-full lg:w-[40px] lg:h-[40px] sm:w-[20px] sm:h-[20px] bg-[#ebeaed] flex justify-center items-center "
           >
             {!isExpand ? arrowDown : arrowUp}
           </button>
