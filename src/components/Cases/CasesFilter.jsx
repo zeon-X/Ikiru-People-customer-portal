@@ -19,7 +19,7 @@ const CasesFilter = () => {
   return (
     <div
       tabIndex={0}
-      className="dropdown-content  w-[400px]  p-6 shadow-2xl bg-base-100 rounded-xl "
+      className="dropdown-content min-w-[250px]  max-w-[400px] w-full  p-6 shadow-2xl bg-base-100 rounded-xl "
     >
       <p className="text-[16px] font-semibold mb-4">Filters</p>
       {/* CASE PRIORITY */}

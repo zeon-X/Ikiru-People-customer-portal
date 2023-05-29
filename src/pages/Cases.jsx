@@ -143,17 +143,19 @@ const Cases = () => {
         <div className="mb-6 flex lg:flex-row sm:flex-col gap-2 justify-between items-start">
           <p className="font-bold text-[24px]">Cases</p>
           <div className="flex flex-wrap  items-center gap-3">
-            {/* SEARCH */}
-            <SearchBox />
-            {/* FILTER*/}
-            <div className="dropdown dropdown-end">
-              <label
-                tabIndex={0}
-                className="btn m-1  w-[48px] h-[48px] p-1 bg-white"
-              >
-                {filterSvg}
-              </label>
-              <CasesFilter />
+            <div className="flex items-center gap-3">
+              {/* SEARCH */}
+              <SearchBox />
+              {/* FILTER*/}
+              <div className="dropdown dropdown-end">
+                <label
+                  tabIndex={0}
+                  className="btn m-1  w-[48px] h-[48px] p-1 bg-white"
+                >
+                  {filterSvg}
+                </label>
+                <CasesFilter />
+              </div>
             </div>
             {/* DOWNLOAD BTN */}
             <button

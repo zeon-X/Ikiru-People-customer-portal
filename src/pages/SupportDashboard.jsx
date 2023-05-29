@@ -7,10 +7,12 @@ const SupportDashboard = () => {
     {
       name: "Open Cases",
       cases: 2,
+      nav: "/support/cases",
     },
     {
       name: "Closed Cases",
       cases: 8,
+      nav: "",
     },
   ]);
   return (
