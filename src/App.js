@@ -69,6 +69,7 @@ function App() {
             <Route path="cases/:slug" element={<CaseUpdate />} />
             <Route path="create-cases" element={<CreateCases />} />
             <Route path="databases" element={<Databases />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
 
           <Route

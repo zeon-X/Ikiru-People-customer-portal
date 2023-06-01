@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { downloadFile } from "../assets/iconsSvg";
-import SupportDashboardTab from "../components//SupportDashboard/SupportDashboardTab";
+import SupportDashboardTab from "../components/SupportDashboard/SupportDashboardTab";
 
 const SupportDashboard = () => {
   const [dbTab, setDBTab] = useState([
