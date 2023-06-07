@@ -29,7 +29,7 @@ const SupportDashboard = () => {
           </button>
         </div>
 
-        <div className="mb-12 grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 justify-between items-start gap-5">
+        <div className="mb-12 grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-1 justify-between items-start gap-5">
           {dbTab.map((x) => {
             return <SupportDashboardTab props={x} />;
           })}
