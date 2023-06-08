@@ -7,7 +7,7 @@ const HomePortals = ({ props }) => {
     <label htmlFor={props.id} className="">
       <div
         onClick={() => navigate(`${props?.nav}`)}
-        className="shadow rounded-xl p-5  w-full h-[142px] bg-white cursor-pointer select-none hover:shadow-xl transition-all ease-in-out"
+        className="shadow rounded-xl p-5  w-full min-h-[142px] h-full bg-white cursor-pointer select-none hover:shadow-xl transition-all ease-in-out"
       >
         <div className="bg-primary rounded-full w-[43px] h-[43px] flex justify-center items-center">
           <img width={24} height={24} src={props?.icon} alt="icon" />

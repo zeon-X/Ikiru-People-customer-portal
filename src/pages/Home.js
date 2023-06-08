@@ -132,7 +132,7 @@ const Home = () => {
           Welcome to the Ikiru People customer portal
         </p>
 
-        <div className="mb-12 grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 justify-between items-start gap-5">
+        <div className="mb-12  grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 justify-between items-start gap-5">
           {HomePortalInfo.map((x) => {
             return <HomePortals props={x} />;
           })}
